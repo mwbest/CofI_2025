@@ -1,0 +1,311 @@
+# CofI Reduction Log for Target: M3_7
+# Date: 2025-07-30
+# This file contains the parameters used in each reduction step.
+# It can be used to restore widget settings for reproducibility.
+------------------------------------------------------------
+
+[TAB: Data Input]
+ACTION: Read Folder
+TIMESTAMP: 2025-07-30T11:56:49.045535
+PARAMETERS:
+{
+    "folder_path": "Star_JH-21Y252"
+}
+------------------------------------------------------------
+
+[TAB: Calibration - Bias]
+ACTION: Compute Bias
+TIMESTAMP: 2025-07-30T11:58:22.478288
+PARAMETERS:
+{
+    "Bias Frames": "11,12,13,14,15,16",
+    "Combine Type": "median",
+    "Sigma Reject": 5.0,
+    "display individual": false,
+    "Trim Bias": false
+}
+------------------------------------------------------------
+
+[TAB: Calibration - Dark]
+ACTION: Compute Dark
+TIMESTAMP: 2025-07-30T11:58:31.596401
+PARAMETERS:
+{
+    "Dark Frames": "17,18,19",
+    "Combine Type": "median",
+    "Sigma Reject": 5.0,
+    "Clip (x Uncertainty)": 0.0,
+    "Display Individual": false,
+    "Apply dark Bias": true,
+    "Trim Dark": false
+}
+------------------------------------------------------------
+
+[TAB: Calibration - Flat]
+ACTION: Compute Flat
+TIMESTAMP: 2025-07-30T11:58:41.566915
+PARAMETERS:
+{
+    "Flat Frames": "1,2,3,4,5",
+    "Combine Type": "median",
+    "Sigma Reject": 5.0,
+    "Spectral Flat": true,
+    "Window Width": 101,
+    "Normalize Flat": true,
+    "S/N Min (for Norm)": 50.0,
+    "Apply Bias": true,
+    "Apply Dark": true,
+    "Display Individual flats": false,
+    "Flat littrow ": false,
+    "Trim Flats": false
+}
+------------------------------------------------------------
+
+[TAB: Calibration - Arcs]
+ACTION: Compute Arc
+TIMESTAMP: 2025-07-30T11:58:57.718969
+PARAMETERS:
+{
+    "Arc Frames": "6"
+}
+------------------------------------------------------------
+
+[TAB: Slits & Targets - Find Slits]
+ACTION: Find Slits
+TIMESTAMP: 2025-07-30T11:59:47.213213
+PARAMETERS:
+{
+    "Flat Frame for Slits": "1",
+    "KMS File": "kms/kosmos.36.M3new.kms",
+    "Edge Threshold (FindSlits)": 1.0,
+    "Use S/N for Edges (FindSlits)": true,
+    "Smooth Radius (FindSlits)": 3.0,
+    "Fit Degree (FindSlits)": 2,
+    "Pixels to skip (FindSlits)": 50,
+    "spectra center location (if known)": "None"
+}
+------------------------------------------------------------
+
+[TAB: Slits & Targets - Filter Targets]
+ACTION: Filter Slits
+TIMESTAMP: 2025-07-30T12:00:42.891576
+PARAMETERS:
+{
+    "Filter By": "ID",
+    "Values": "TARG101,TARG102,TARG106,TARG107"
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - Wave Cal]
+ACTION: Reduce Run Wavelength Calibration
+TIMESTAMP: 2025-07-30T12:01:19.885359
+PARAMETERS:
+{
+    "clobber": false,
+    "lamp_spec_file": "KOSMOS/KOSMOS_red_waves.fits",
+    "fit_degree": 3,
+    "shift_multiplier": -22.5,
+    "file": "new_wave_lamp/old_neon_red_center.dat",
+    "wave_fit_degree_after_identify": 5,
+    "identify_thresh": 10.0,
+    "sky": false,
+    "wref": null,
+    "inter": false,
+    "orders": null,
+    "verbose": false,
+    "rad": 5,
+    "fit": true,
+    "maxshift": 10000000000.0,
+    "sampling_value": 10,
+    "correcting_value": 2,
+    "weight_thresh": 0.5,
+    "arc_line_position": 2,
+    "disp": null,
+    "plot": true,
+    "pixplot": false,
+    "domain": false,
+    "plotinter": true,
+    "xmin": null,
+    "xmax": null,
+    "lags_offset": 50,
+    "nskip": null,
+    "rows": null
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - Reduce]
+ACTION: Reduce Science Frame
+TIMESTAMP: 2025-07-30T12:02:29.188241
+PARAMETERS:
+{
+    "num": 7,
+    "crbox": "lacosmic",
+    "crsig": 5.0,
+    "objlim": 5.0,
+    "channel": null,
+    "scat": null,
+    "badpix": null,
+    "trim": true,
+    "utr": false,
+    "ext": 0,
+    "solve": false,
+    "seeing": 2.0,
+    "sigfrac": 0.3,
+    "Apply bias": true,
+    "Apply dark": true,
+    "Apply flat": false
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 2D Extract]
+ACTION:  Setup & Run 2D Extrction
+TIMESTAMP: 2025-07-30T12:03:01.286290
+PARAMETERS:
+{
+    "trace_file": null,
+    "trace_spectrum": null,
+    "trace_inst": null,
+    "trace_type": "Polynomial1D",
+    "trace_degree": 3,
+    "trace_sigdegree": 3,
+    "trace_pix0": 0,
+    "trace_rad": 5,
+    "trace_model": null,
+    "trace_sc0": null,
+    "trace_rows": null,
+    "trace_transpose": false,
+    "trace_lags": "-39,39",
+    "trace_channel": null,
+    "trace_hdu": 1,
+    "extract2d_rows": null,
+    "extract2d_buffer": 0,
+    "findpeak_sc0": null,
+    "findpeak_width": null,
+    "findpeak_thresh": 10.0,
+    "findpeak_sort": true,
+    "findpeak_back_percentile": 10,
+    "findpeak_method": "linear",
+    "findpeak_smooth": 5.0,
+    "findpeak_diff": 10000,
+    "findpeak_bundle": 10000,
+    "findpeak_verbose": false,
+    "findpeak_plot": false,
+    "skyline_thresh": 10.0,
+    "skyline_inter": true,
+    "skyline_linear": false,
+    "skyline_file": "skyline.dat",
+    "skyline_rows": null,
+    "skyline_obj_rad": 5,
+    "correcting_value": 2
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 2D Extract]
+ACTION:  Setup & Run 2D Extrction
+TIMESTAMP: 2025-07-30T12:03:01.288993
+PARAMETERS:
+{
+    "Adjustment Choice": false
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 1D Extract]
+ACTION: Setup & Run 1D Extraction
+TIMESTAMP: 2025-07-30T12:03:42.970014
+PARAMETERS:
+{
+    "trace_class_file": null,
+    "trace_class_spectrum": null,
+    "trace_class_inst": "",
+    "trace_class_type": "Polynomial1D",
+    "trace_class_degree": 3,
+    "trace_class_sigdegree": 3,
+    "trace_class_pix0": 0,
+    "trace_class_rad": 5,
+    "trace_class_model": null,
+    "trace_class_sc0": null,
+    "trace_class_rows": null,
+    "trace_class_transpose": false,
+    "trace_class_lags": "-39,39",
+    "trace_class_channel": null,
+    "trace_class_hdu": 1,
+    "findpeak_sc0": null,
+    "findpeak_width": null,
+    "findpeak_thresh": 50.0,
+    "findpeak_sort": true,
+    "findpeak_back_percentile": 10,
+    "findpeak_method": "linear",
+    "findpeak_smooth": 5.0,
+    "findpeak_diff": 10000,
+    "findpeak_bundle": 10000,
+    "findpeak_verbose": false,
+    "findpeak_plot": false,
+    "trace_method_srows": null,
+    "trace_method_sc0": null,
+    "trace_method_rad": 5,
+    "trace_method_thresh": 20.0,
+    "trace_method_index": null,
+    "trace_method_skip": 20,
+    "trace_method_gaussian": true,
+    "trace_method_verbose": false,
+    "extract_medfilt": null,
+    "extract_fit": false,
+    "extract_old": false,
+    "extract_nout": null,
+    "extract_threads": 0,
+    "skyline_thresh": 12.0,
+    "skyline_inter": true,
+    "skyline_plot": true,
+    "skyline_linear": false,
+    "skyline_file": "new_wave_lamp/skyline.dat",
+    "skyline_rows": null
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 1D Extract]
+ACTION: Setup & Run 1D Extraction
+TIMESTAMP: 2025-07-30T12:03:45.544272
+PARAMETERS:
+{
+    "TARG106_rad": 5,
+    "TARG106_Bkg Region": 10,
+    "Sky window offset": 2,
+    "1d_calibration_choice": false
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 1D Extract]
+ACTION: Setup & Run 1D Extraction
+TIMESTAMP: 2025-07-30T12:03:54.845197
+PARAMETERS:
+{
+    "TARG102_rad": 5,
+    "TARG102_Bkg Region": 10,
+    "Sky window offset": 2,
+    "1d_calibration_choice": false
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 1D Extract]
+ACTION: Setup & Run 1D Extraction
+TIMESTAMP: 2025-07-30T12:04:29.280981
+PARAMETERS:
+{
+    "TARG107_rad": 6,
+    "TARG107_Bkg Region": 10,
+    "Sky window offset": 3,
+    "1d_calibration_choice": false
+}
+------------------------------------------------------------
+
+[TAB: Science & Extraction - 1D Extract]
+ACTION: Setup & Run 1D Extraction
+TIMESTAMP: 2025-07-30T12:04:39.692864
+PARAMETERS:
+{
+    "TARG101_rad": 6,
+    "TARG101_Bkg Region": 10,
+    "Sky window offset": 3,
+    "1d_calibration_choice": false
+}
+------------------------------------------------------------

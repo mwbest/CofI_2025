@@ -1,0 +1,200 @@
+---
+# created by SKYCAT-TOOL -- KMS-plugin V1.62
+# : created
+# orig filename  : kosmos.36.M3new : /home/workers/.kms/SET/kosmos.36.M3new.kms
+# : orig
+# user-date      : workers 2024-12-15T21:42:52
+# : user-date
+# fits file      : 
+# : fits
+# fits instrument: 
+# : fits
+# fits origin    : CASB -- STScI
+# : fits
+# fits object    : dss10102
+# : fits
+# catalog name   : DSS 2 RED (1") at ESO
+# : catalog
+# INS.MASK.NA    : M036M3new
+# : INS.MASK.NA
+# INS.MASK.ID    : 214252
+# : INS.MASK.ID
+# INS.MASK.NAID  : M036M3new+214252
+# : INS.MASK.NAID
+# target setup for KOSMOS
+# : target
+# --------------------------------------------
+# : --------------------------------------------
+TEL.TARG.ALPHA : 134211.698
+TEL.TARG.DELTA : +282237.240
+TEL.ROT.OFFANGLE : 0.000
+TEL.TARG.EQUINOX : 2000.0
+INS.SLIT.NUMBER : 13
+INS.RSLIT.NUMBER : 0
+targets :
+- ID : TARG101
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134209.522
+  DELTA : +281952.220
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : 4.902
+  YMM : 28.168
+- ID : TARG102
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134206.678
+  DELTA : +282056.150
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : 11.306
+  YMM : 17.263
+- ID : TARG103
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134214.322
+  DELTA : +282531.450
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : -5.906
+  YMM : -29.737
+- ID : TARG104
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134206.057
+  DELTA : +282438.040
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : 12.699
+  YMM : -20.606
+- ID : TARG105
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134210.935
+  DELTA : +282356.800
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : 1.717
+  YMM : -13.576
+- ID : TARG106
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134208.721
+  DELTA : +282111.770
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : 6.705
+  YMM : 14.594
+- ID : TARG107
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 0.9
+  LEN : 10.0
+  ROT : 0.0
+  ALPHA : 134212.664
+  DELTA : +282041.400
+  WIDMM : 0.154
+  LENMM : 1.707
+  XMM : -2.176
+  YMM : 19.768
+- ID : TARG108
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134203.795
+  DELTA : +282507.780
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : 17.789
+  YMM : -25.679
+- ID : TARG109
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134203.381
+  DELTA : +282342.900
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : 18.725
+  YMM : -11.192
+- ID : TARG110
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134219.683
+  DELTA : +282243.130
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : -17.981
+  YMM : -1.024
+- ID : TARG111
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134220.351
+  DELTA : +282202.910
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : -19.487
+  YMM : 5.838
+- ID : TARG112
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134210.737
+  DELTA : +281904.060
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : 2.165
+  YMM : 36.385
+- ID : TARG113
+  NAME : NN
+  SHAPE : STRAIGHT
+  WID : 4.0
+  LEN : 4.0
+  ROT : 0.0
+  ALPHA : 134217.972
+  DELTA : +282018.410
+  WIDMM : 0.683
+  LENMM : 0.683
+  XMM : -14.134
+  YMM : 23.680
+INS.RSTAR.NUMBER : 0
+SEQ.PREP.MASK_NA : M036M3new
+SEQ.PREP.MASK_ID : 214252
+SEQ.PREP.LMIN : 381.000
+SEQ.PREP.LCEN : 480.000
+SEQ.PREP.LMAX : 541.000
+SEQ.PREP.GRAT : VPH
+SEQ.PREP.FILT : g
+SEQ.PREP.CAM : CAMERA
+SEQ.PREP.GOOD : 2
