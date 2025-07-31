@@ -24,7 +24,7 @@ This repository includes everything you need to get started:
 # Getting Started
 
 1. **Clone the repository:**
-  bash
+```bash```
 git clone https://github.com/mwbest/CofI_2025.git
 
 3. **Navigate to the root directory:**
