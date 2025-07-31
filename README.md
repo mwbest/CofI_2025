@@ -25,14 +25,14 @@ This repository includes everything you need to get started:
 
 1. **Clone the repository:**
 
-```git clone https://github.com/mwbest/CofI_2025.git```
+  ```git clone https://github.com/mwbest/CofI_2025.git```
 
 3. **Navigate to the root directory:**
 
-```cd CofI_multi```
+  ```cd CofI_multi```
 
 5. **Install the package and its dependencies:**
 
-```pip install .```
+  ```pip install .```
 
 For development, you can use ```pip install -e .``` for an editable install.
