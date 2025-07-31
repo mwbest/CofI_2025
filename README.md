@@ -8,7 +8,7 @@ This repository represents the latest, application-focused version of our reduct
 
 This pipeline is designed to guide users through the complex process of multi-slit data reduction without requiring extensive coding. It is built upon the robust astro-pyvista library and encapsulates the entire workflow from calibration and slit identification to 2D/1D spectral extraction and post-processing analysis into an interactive widget.
 
-For users interested in the foundational, cell-by-cell code and a more detailed explanation of the base algorithms, please visit our earlier development repository: CofI_Abdullah_2024. While that repository provides a thorough breakdown of the core concepts, it lacks a reflection of our recent updates to the code. This repository contains our most up-to-date and user-friendly implementation.
+For users interested in the foundational, cell-by-cell code and a more detailed explanation of the base algorithms, please visit our earlier development repository: CofI_Abdullah_2024 (https://github.com/mwbest/CofI_Abdullah_2024). While that repository provides a thorough breakdown of the core concepts, it lacks a reflection of our recent updates to the code. This repository contains our most up-to-date and user-friendly implementation.
 
 ## Repository Contents
 
