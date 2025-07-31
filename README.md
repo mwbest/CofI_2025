@@ -38,28 +38,13 @@ This repository includes everything you need to get started:
 - **Sample Data:** A complete dataset from an M3 mask is included for a trial run, allowing you to test the pipeline from start to finish.
 
 - **Jupyter Notebook:** An example notebook that demonstrates how to install the package, launch the widget, and begin the reduction process.
-# Getting Started
-
-1. **Clone the repository:**
-```bash```
-
-git clone https://github.com/mwbest/CofI_2025.git
-
-3. **Navigate to the root directory:**
-  bash
-cd CofI_multi
-
-5. **Install the package and its dependencies:**
-  bash
-pip install .
-
-For development, you can use pip install -e . for an editable install.
 
 - **A Draft User Manual (widgets_notebook_workflow.pdf):** A comprehensive guide detailing the operation of the user interface and the underlying scientific workflow.
 
 - **Sample Data:** A complete dataset from an M3 mask is included for a trial run, allowing you to test the pipeline from start to finish.
 
 - **Jupyter Notebook:** An example notebook that demonstrates how to install the package, launch the widget, and begin the reduction process.
+
 # Getting Started
 
 1. **Clone the repository:**
