@@ -28,9 +28,7 @@ Getting Started
 
 The CofI Reduction package is designed to be installed into your Python environment.
 
-    Clone the repository:
-    Bash
-
+Clone the repository:
 git clone https://github.com/mwbest/CofI_2025.git
 
 Navigate to the root directory:
