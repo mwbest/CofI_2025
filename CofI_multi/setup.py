@@ -17,7 +17,9 @@ setup(
         "PyQt5",
         "PyQt6",
         "PySide6",
-        "PySide2",# PyQt5, PyQt6,PySide6, and PySide2
+        "specutils",
+        "ipydatagrid",
+        # PyQt5, PyQt6,PySide6,
         # "photutils==2.20" This is a dependency in pyvista, so it's not required here.
         # Add any other dependencies needed by your package
     ],
