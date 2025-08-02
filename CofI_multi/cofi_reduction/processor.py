@@ -217,13 +217,13 @@ class CofiProcessor:
                 if hasattr(imcr, 'bitmask') and imcr.bitmask is not None:
                     imcr.bitmask = imcr.bitmask.astype(np.uint32)
                 
-                out = trace.extract2d(imcr, rows=extract2d_rows, display=None, buffer=extract2d_buffer)
+                out = trace.extract2d(imcr, rows=extract2d_rows, display=self.display, buffer=extract2d_buffer)
                 flat_out = None
                 if flat_im is not None:
                     print("Extracting flat field slits...")
                     if hasattr(flat_im, 'bitmask') and flat_im.bitmask is not None:
                          flat_im.bitmask = flat_im.bitmask.astype(np.uint32)
-                    flat_out = trace.extract2d(flat_im, rows=extract2d_rows, display=None, buffer=extract2d_buffer)
+                    flat_out = trace.extract2d(flat_im, rows=extract2d_rows, display=self.display, buffer=extract2d_buffer)
                 
                 adjust_wavelength = val1.value if hasattr(val1, 'value') else True
                 diffs = []
