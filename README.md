@@ -29,6 +29,7 @@ This repository includes everything you need to get started:
 - **Jupyter Notebook:** An example notebook that demonstrates how to install the package, launch the widget, and begin the reduction process.
 
 # Getting Started
+**!Note:** Follow the workflow guide for proper installation. This one is still in progress.
 
 1. **Clone the repository:**
 
